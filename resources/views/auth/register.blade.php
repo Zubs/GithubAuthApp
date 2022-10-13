@@ -58,6 +58,13 @@
                 <x-primary-button class="ml-4">
                     {{ __('Register') }}
                 </x-primary-button>
+
+                <x-primary-button
+                    class="ml-3 bg-blue-300 hover:bg-blue-300"
+                    type="button"
+                    onclick="location.href='{{ route('socialite.redirect') }}'">
+                    {{ __('Login with GitHub') }}
+                </x-primary-button>
             </div>
         </form>
     </x-auth-card>
